@@ -85,8 +85,5 @@ public class A1Adept {
 	}
 }
 
-Biggest: Janet Weiss (12.50)
-Smallest: Corin Tucker (4.55)
-Average: 8.70
 
 
