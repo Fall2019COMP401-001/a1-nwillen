@@ -80,6 +80,7 @@ public class A1Adept {
 		for ( int i = 0; i < customerTotal.length; i++) {
 			average += customerTotal[i];
 		}
+		average /= customerTotal.length;
 		return average;
 	}
 }
