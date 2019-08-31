@@ -25,11 +25,15 @@ public class A1Jedi {
 		double[] customerTotal = new double[numCustomer];
 		int[] numEachItem = new int[numItems];
 		int[] customerEachItem = new int[numItems];
-
-		
+		boolean[] customerEachItemHelper = new boolean[numItems];
+ 		
 		for (int i = 0; i < numCustomer; i++) {
 			firstName[i] = scan.next();
 			lastName[i] = scan.next();
+			// reset the helper
+			for (int n = 0; n < customerEachItemHelper.length; n++) {
+				customerEachItemHelper[n] = false;
+			}
 			int numTypeItems = scan.nextInt();
 			for (int j = 0; j < numTypeItems; j++ ) {
 				int customerNumEachItem = scan.nextInt();
@@ -37,7 +41,10 @@ public class A1Jedi {
 				for (int k = 0; k < itemType.length; k++) {
 					if (customerItemType.equals(itemType[k])) {
 						numEachItem[k] += customerNumEachItem;
-						customerEachItem[k]++;
+						// if the customer has not bought an item then increment
+						if (!customerEachItemHelper[k]) 
+						customerEachItem[k]++;	
+						customerEachItemHelper[k] = true;
 					}
 				} 
 			}

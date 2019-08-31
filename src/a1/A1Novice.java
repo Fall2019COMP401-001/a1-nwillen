@@ -32,10 +32,12 @@ public class A1Novice {
 			}
 		}
 		
+		
 		for (int i = 0; i < numCustomers; i++) {
-			System.out.println(firstNames[i].charAt(0) + ". " + lastNames[i] + ": " + totalMoney[i]);
+			System.out.println(firstNames[i].charAt(0) + ". " + lastNames[i] + ": " + String.format("%.2f", totalMoney[i]));
 		}
 		
 		
 	}
 }
+ 

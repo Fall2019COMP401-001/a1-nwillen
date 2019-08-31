@@ -36,12 +36,12 @@ public class A1Adept {
 		
 		
 		System.out.println("Biggest: " + firstName[biggestCustomer(customerTotal)] + " "
-		+ lastName[biggestCustomer(customerTotal)] + "(" + customerTotal[biggestCustomer(customerTotal)] + ")");
+		+ lastName[biggestCustomer(customerTotal)] + "(" + String.format("%.2f", customerTotal[biggestCustomer(customerTotal)]) + ")");
 		
 		System.out.println("Lowest: " + firstName[lowestCustomer(customerTotal)] + " "
-				+ lastName[lowestCustomer(customerTotal)] + "(" + customerTotal[lowestCustomer(customerTotal)] + ")");
+				+ lastName[lowestCustomer(customerTotal)] + "(" + String.format("%.2f", customerTotal[lowestCustomer(customerTotal)]) + ")");
 		
-		System.out.println("Average: " + average(customerTotal));
+		System.out.println("Average: " + String.format("%.2f", average(customerTotal)));
 		
 	}
 	
@@ -87,3 +87,15 @@ public class A1Adept {
 		return average;
 	}
 }
+
+//6
+//Apple 0.25
+//Banana 0.75
+//Milk 3.15
+//Orange 1.25
+//Salami 2.50
+//Sponge 1.15
+//3 
+//Carrie Brownstein 3 2 Banana 1 Orange 2 Milk
+//Corin Tucker 2 3 Banana 2 Sponge
+//Janet Weiss 1 5 Salami
