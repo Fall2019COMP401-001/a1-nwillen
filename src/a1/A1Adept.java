@@ -36,10 +36,10 @@ public class A1Adept {
 		
 		
 		System.out.println("Biggest: " + firstName[biggestCustomer(customerTotal)] + " "
-		+ lastName[biggestCustomer(customerTotal)] + "(" + String.format("%.2f", customerTotal[biggestCustomer(customerTotal)]) + ")");
+		+ lastName[biggestCustomer(customerTotal)] + " (" + String.format("%.2f", customerTotal[biggestCustomer(customerTotal)]) + ")");
 		
 		System.out.println("Smallest: " + firstName[lowestCustomer(customerTotal)] + " "
-				+ lastName[lowestCustomer(customerTotal)] + "(" + String.format("%.2f", customerTotal[lowestCustomer(customerTotal)]) + ")");
+				+ lastName[lowestCustomer(customerTotal)] + " (" + String.format("%.2f", customerTotal[lowestCustomer(customerTotal)]) + ")");
 		
 		System.out.println("Average: " + String.format("%.2f", average(customerTotal)));
 		
@@ -84,5 +84,9 @@ public class A1Adept {
 		return average;
 	}
 }
+
+Biggest: Janet Weiss (12.50)
+Smallest: Corin Tucker (4.55)
+Average: 8.70
 
 
